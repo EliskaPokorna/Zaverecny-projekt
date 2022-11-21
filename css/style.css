@@ -1,0 +1,499 @@
+@charset "UTF-8";
+body {
+  margin: 0;
+}
+
+/* Menu */
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.menu__item {
+  list-style: none;
+  display: flex;
+}
+.menu__link {
+  color: #9C2A04;
+  text-decoration: none;
+  padding: 15px 50px;
+  font-weight: bolder;
+  font-size: 20px;
+}
+.menu__link:hover, .menu__link:focus, .menu__link:active {
+  color: #FFA223;
+}
+.menu__link--border {
+  color: white;
+  background-color: #9C2A04;
+  border-radius: 5px;
+  padding: 13px 48px;
+  border: 2px solid #9C2A04;
+}
+.menu__link--border:hover, .menu__link--border:focus, .menu__link--border:active {
+  background-color: transparent;
+  color: #9C2A04;
+  border: 2px solid #9C2A04;
+}
+
+/*Hlavička*/
+.header {
+  background-image: url("../images/hlavicka.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 200px;
+}
+
+.flash__first, .flash__second {
+  display: none;
+}
+
+.title__text {
+  font-size: 22px;
+  margin: 0;
+  padding-top: 80px;
+  text-align: center;
+  color: #9C2A04;
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    height: 400px;
+    position: relative;
+  }
+  .title__text {
+    font-size: 38px;
+    margin: 0;
+    padding-top: 160px;
+    text-align: center;
+    color: #9C2A04;
+  }
+  .flash__first, .flash__second {
+    display: block;
+    height: 150px;
+    position: absolute;
+    opacity: 0.7;
+  }
+  .flash__first {
+    top: 80px;
+    left: 40px;
+  }
+  .flash__second {
+    right: 40px;
+    bottom: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header {
+    height: 500px;
+  }
+  .flash__first, .flash__second {
+    height: 250px;
+  }
+  .flash__first {
+    top: 80px;
+    left: 60px;
+  }
+  .flash__second {
+    right: 60px;
+    bottom: 60px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .header {
+    height: 600px;
+  }
+  .title__text {
+    font-size: 42px;
+    padding-top: 220px;
+  }
+  .flash__first, .flash__second {
+    height: 400px;
+  }
+  .flash__first {
+    top: 20px;
+    left: 80px;
+  }
+  .flash__second {
+    right: 80px;
+    bottom: 20px;
+  }
+}
+@media screen and (min-width: 1536px) {
+  .header {
+    height: 700px;
+  }
+  .title__text {
+    font-size: 56px;
+    padding-top: 250px;
+  }
+  .flash__first, .flash__second {
+    height: 450px;
+  }
+  .flash__first {
+    top: 20px;
+    left: 80px;
+  }
+  .flash__second {
+    right: 80px;
+    bottom: 10px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .header {
+    height: 800px;
+  }
+  .title__text {
+    font-size: 56px;
+    padding-top: 300px;
+  }
+  .flash__first, .flash__second {
+    height: 560px;
+  }
+  .flash__first {
+    top: 20px;
+    left: 80px;
+  }
+  .flash__second {
+    right: 80px;
+    bottom: 10px;
+  }
+}
+/*Pruh Proč se na mě obrátit? - 3 sloupce vedle sebe*/
+.flex-col-3 {
+  margin-bottom: 20px;
+}
+
+.p-spacer {
+  padding: 20px;
+}
+
+.subtitle {
+  color: #9C2A04;
+  font-size: 22px;
+  margin-top: 20px;
+}
+
+.icon__svg {
+  height: 60px;
+  margin-top: 40px;
+}
+
+.text--different {
+  text-align: left;
+  font-size: 18px;
+  color: #9C2A04;
+  margin: 30px 0 0 0;
+}
+
+.text {
+  text-align: left;
+  font-size: 16px;
+  margin-bottom: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .subtitle {
+    font-size: 32px;
+    margin-bottom: 0;
+  }
+  .icon {
+    display: flex;
+  }
+  .icon__column {
+    margin: 20px;
+  }
+  .icon__svg {
+    margin: 0;
+  }
+  .text--different {
+    font-size: 20px;
+  }
+  .text {
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .flex-col-3 {
+    max-width: 1680px;
+    margin: 0 auto;
+  }
+  .p-spacer {
+    padding: 80px;
+    padding-top: 40px;
+  }
+  .subtitle {
+    font-size: 48px;
+    margin-bottom: 0;
+  }
+  .text--different {
+    font-size: 24px;
+  }
+  .text {
+    font-size: 20px;
+  }
+  .icon__svg {
+    height: 80px;
+    margin-top: 40px;
+    align-self: flex-start;
+  }
+  .icon__column {
+    margin: 0;
+  }
+  .icon__column + .icon__column {
+    margin-left: 40px;
+  }
+}
+/*Pruh - čtyři karty vedle sebe + text*/
+.text--strong {
+  font-size: 20px;
+}
+
+.grid-col-4 {
+  background-color: #F0F0F0;
+  padding-bottom: 0;
+}
+
+.card__column {
+  background-color: white;
+  margin: 20px 0;
+}
+.card__column--end {
+  margin-bottom: 0;
+}
+.card__img {
+  width: 100%;
+}
+.card .text--different {
+  padding: 30px;
+  padding-bottom: 0;
+  margin: 0;
+}
+.card .text {
+  padding: 30px;
+  margin: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  .card__column {
+    margin: 0;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .card, .grid-col-4__text {
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 1680px;
+    margin: 0 auto;
+  }
+}
+/*Šedý pruh s tlačítkem*/
+.text-button {
+  background-color: #F0F0F0;
+  padding-bottom: 40px;
+  padding-top: 40px;
+}
+
+.text-1 {
+  margin-top: 0;
+}
+
+.strong--text {
+  font-size: 20px;
+  padding: 0 20px;
+  font-weight: bold;
+}
+
+.call-to-action__right {
+  margin-bottom: 10px;
+}
+
+.button--basic {
+  padding: 10px 20px;
+  border: 1px solid #9C2A04;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 16px;
+  margin: 20px;
+  background-color: white;
+  color: #9C2A04;
+  text-decoration: none;
+}
+
+.button--basic:hover, .button--basic:focus, .button--basic:active {
+  background-color: #9C2A04;
+  color: white;
+}
+
+@media screen and (min-width: 1024px) {
+  .call-to-action {
+    display: grid;
+    grid-template-columns: 6fr 1fr;
+    align-items: center;
+  }
+  .text-2 {
+    margin-bottom: 0;
+  }
+  .call-to-action__left {
+    margin-left: 20px;
+  }
+  .call-to-action__right {
+    margin-right: 40px;
+  }
+  .button--basic {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .call-to-action__left {
+    margin-left: 80px;
+  }
+  .call-to-action__right {
+    margin-right: 100px;
+  }
+  .strong--text {
+    font-size: 28px;
+  }
+}
+@media screen and (min-width: 1680px) {
+  .call-to-action {
+    max-width: 1680px;
+    margin: 0 auto;
+  }
+  .call-to-action__left {
+    margin-left: 0;
+  }
+  .call-to-action__right {
+    margin-right: 0;
+  }
+}
+/*Pruh dva sloupce - co dále nabízím?*/
+.grid-col-2 {
+  padding: 20px;
+}
+
+.button--little {
+  margin: 0;
+}
+
+.button {
+  margin-top: 20px;
+}
+
+.button {
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .column {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .column__second {
+    padding-left: 20px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .grid-col-2 {
+    padding: 20px 80px;
+    padding-bottom: 80px;
+  }
+  .grid-col-2-1 {
+    max-width: 1680px;
+    margin: 0 auto;
+  }
+}
+/*Žlutý pruh s tlačítkem*/
+.text-button-flash {
+  background-color: #FFA223;
+}
+
+.button--flash {
+  background-color: black;
+  color: white;
+  border: none;
+}
+
+.button--flash:hover, .button--flash:focus, .button--flash:active {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+}
+
+.svg--flash {
+  display: none;
+}
+
+@media screen and (min-width: 1536px) {
+  .call-to-action {
+    position: relative;
+  }
+  .svg--flash {
+    display: block;
+    position: absolute;
+    height: 300px;
+    right: 340px;
+  }
+}
+/*Patička*/
+.footer {
+  padding: 20px;
+}
+
+.footer__img {
+  height: 140px;
+}
+
+.footer__icon {
+  height: 50px;
+}
+
+.footer__link {
+  font-size: 16px;
+  display: flex;
+  justify-content: end;
+}
+
+.footer__item {
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.footer__text {
+  font-size: 14px;
+  margin: 0;
+  margin-top: 30px;
+}
+
+.line {
+  max-width: 100%;
+}
+
+.footer__icon:hover {
+  background-color: black;
+}
+
+@media screen and (min-width: 768px) {
+  .footer__item {
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .footer {
+    padding: 80px;
+    max-width: 1680px;
+    margin: 0 auto;
+  }
+  .footer__item {
+    font-size: 20px;
+  }
+  .footer__text {
+    font-size: 16px;
+  }
+}/*# sourceMappingURL=style.css.map */

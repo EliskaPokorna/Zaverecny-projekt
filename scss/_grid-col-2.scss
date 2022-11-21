@@ -1,0 +1,47 @@
+@use 'base';
+
+/*Pruh dva sloupce - co dále nabízím?*/
+
+.grid-col-2 {
+    padding: base.$p-spacer-primary;
+}
+
+.button--little {
+    margin: 0;
+}
+
+.button {
+    margin-top: 20px;
+}
+
+.button {
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+@media screen and (min-width: 768px) {
+
+    .column {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .column__second {
+        padding-left: 20px;
+    }
+
+}
+
+@media screen and (min-width: 1440px) {
+
+    .grid-col-2 {
+        padding: 20px 80px;
+        padding-bottom: 80px;
+    }
+
+    .grid-col-2-1 {
+        max-width: 1680px;
+        margin: 0 auto;
+    }
+
+}

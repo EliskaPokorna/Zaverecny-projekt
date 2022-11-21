@@ -1,0 +1,197 @@
+@use 'base';
+
+/*Hlavička*/
+
+
+.header {
+
+    background-image: url("../images/hlavicka.jpg"); 
+    background-repeat: no-repeat; 
+    background-position: center; 
+    background-size: cover;  
+    height: 200px;
+
+}
+
+.flash {
+
+    &__first, &__second {
+        display: none;
+    }
+
+}
+
+.title {
+    
+    &__text {
+        font-size: 22px;
+        margin: 0;
+        padding-top: 80px;
+        text-align: center;
+        color: base.$color-primary;
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+    .header {
+        height: 400px;
+        position: relative;
+
+    }
+
+    .title {
+
+        &__text {
+            font-size: 38px;
+            margin: 0;
+            padding-top: 160px;
+            text-align: center;
+            color: base.$color-primary;
+        }
+    }
+
+    .flash {
+
+        &__first, &__second {
+            display: block;
+            height: 150px;
+            position: absolute;
+            opacity: 0.7;
+        }
+    
+        &__first {
+            top: 80px;
+            left: 40px;
+        }
+    
+        &__second {
+            right: 40px;
+            bottom: 60px;
+        }
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+
+    .header {
+        height: 500px;
+    }
+
+    .flash {
+
+        &__first, &__second {
+            height: 250px;
+        }
+
+        &__first {
+            top: 80px;
+            left: 60px;
+        }
+    
+        &__second {
+            right: 60px;
+            bottom: 60px;
+        }
+    }
+
+}
+
+@media screen and (min-width: 1440px) {
+
+    .header {
+        height: 600px;
+    }
+
+    .title {
+    
+        &__text {
+            font-size: 42px;
+            padding-top: 220px;
+        }
+    }
+
+    .flash {
+
+        &__first, &__second {
+            height: 400px;
+        }
+
+        &__first {
+            top: 20px;
+            left: 80px;
+        }
+    
+        &__second {
+            right: 80px;
+            bottom: 20px;
+        }
+    }
+
+}
+
+@media screen and (min-width: 1536px) {
+
+    .header {
+        height: 700px;
+    }
+
+    .title {
+    
+        &__text {
+            font-size: 56px;
+            padding-top: 250px;
+        }
+    }
+
+    .flash {
+
+        &__first, &__second {
+            height: 450px;
+        }
+
+        &__first {
+            top: 20px;
+            left: 80px;
+        }
+    
+        &__second {
+            right: 80px;
+            bottom: 10px;
+        }
+    }
+}
+
+@media screen and (min-width: 1920px) {
+
+    .header {
+        height: 800px;
+    }
+
+    .title {
+    
+        &__text {
+            font-size: 56px;
+            padding-top: 300px;
+        }
+    }
+
+    .flash {
+
+        &__first, &__second {
+            height: 560px;
+        }
+
+        &__first {
+            top: 20px;
+            left: 80px;
+        }
+    
+        &__second {
+            right: 80px;
+            bottom: 10px;
+        }
+    }
+
+}

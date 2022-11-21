@@ -1,0 +1,113 @@
+@use 'base';
+
+/*Pruh Proč se na mě obrátit? - 3 sloupce vedle sebe*/
+
+.flex-col-3 {
+    margin-bottom: 20px;
+}
+
+.p-spacer {
+    padding: base.$p-spacer-primary;
+}
+
+.subtitle {
+    color: base.$color-primary;
+    font-size: 22px;
+    margin-top: 20px;
+}
+
+.icon {
+
+    &__svg {
+        height: 60px;
+        margin-top: 40px;
+    }
+
+}
+
+.text--different {
+    text-align: left;
+    font-size: base.$font-size-secondary;
+    color: base.$color-primary;
+    margin: 30px 0 0 0;
+}
+
+.text {
+    text-align: left;
+    font-size: base.$font-size-third;
+    margin-bottom: 0;
+}
+
+@media screen and (min-width: 768px) {
+
+    .subtitle {
+        font-size: 32px;
+        margin-bottom: 0;
+    }
+
+    .icon {
+        display: flex;
+    
+        &__column {
+            margin: base.$m-spacer-primary
+        }
+
+        &__svg {
+            margin: 0;
+        }
+
+    }
+
+    .text--different {
+        font-size: 20px;
+    }
+    
+    .text {
+        font-size: base.$font-size-secondary;
+    }
+
+}
+
+@media screen and (min-width: 1440px) {
+
+    .flex-col-3 {
+        max-width: 1680px;
+        margin: 0 auto;
+    }
+
+    .p-spacer {
+        padding: base.$padding;
+        padding-top: base.$padding-top;
+    }
+
+    .subtitle {
+        font-size: 48px;
+        margin-bottom: 0;
+    }
+
+    .text--different {
+        font-size: 24px;
+    }
+    
+    .text {
+        font-size: base.$font-size-primary;
+    }
+
+    .icon {
+
+        &__svg {
+            height: 80px;
+            margin-top: 40px;
+            align-self: flex-start;
+        }
+
+        &__column {
+            margin: 0;
+        }
+
+        &__column + &__column {
+            margin-left: 40px;
+        }
+    }
+
+}

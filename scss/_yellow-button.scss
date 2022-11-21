@@ -1,0 +1,40 @@
+@use 'base';
+
+/*Žlutý pruh s tlačítkem*/
+
+
+.text-button-flash {
+    background-color: base.$color-secondary;
+}
+
+.button--flash {
+    background-color: black;
+    color: white;
+    border: none;
+}
+
+.button--flash:hover, .button--flash:focus, .button--flash:active {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+
+.svg--flash {
+    display: none;
+}
+
+@media screen and (min-width: 1536px) {
+
+    .call-to-action {
+        position: relative;
+    }
+
+    .svg--flash {
+        display: block;
+        position: absolute;
+        height: 300px;
+
+        right: 340px;
+    }
+
+}

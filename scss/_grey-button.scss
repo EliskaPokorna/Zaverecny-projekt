@@ -1,0 +1,102 @@
+@use 'base';
+
+/*Šedý pruh s tlačítkem*/
+
+.text-button {
+    background-color: #F0F0F0;
+    padding-bottom: 40px;
+    padding-top: 40px;
+}
+
+.text-1 {
+    margin-top: 0;
+}
+
+.strong--text {
+    font-size: base.$font-size-primary;
+    padding: 0 20px;
+    font-weight: bold;
+}
+
+.call-to-action__right {
+    margin-bottom: 10px;
+}
+
+.button--basic {
+    padding: 10px 20px;
+    border: 1px solid base.$color-primary;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: base.$font-size-third;
+    margin: base.$m-spacer-primary;
+    background-color: white;
+    color: base.$color-primary;
+    text-decoration: none;
+}
+
+.button--basic:hover, .button--basic:focus, .button--basic:active {
+    background-color: #9C2A04;
+    color: white;
+}
+
+@media screen and (min-width: 1024px) {
+
+    .call-to-action {
+        display: grid;
+        grid-template-columns: 6fr 1fr;
+        align-items: center;
+    }
+
+    .text-2 {
+        margin-bottom: 0;
+    }
+
+    .call-to-action__left {
+        margin-left: 20px;
+    }
+
+    .call-to-action__right {
+        margin-right: 40px;
+    }
+
+    .button--basic {
+        font-size: base.$font-size-primary;
+    }
+
+}
+
+@media screen and (min-width: 1440px) {
+
+    .call-to-action__left {
+        margin-left: 80px;
+    }
+
+    .call-to-action__right {
+        margin-right: 100px;
+    }
+
+    .strong--text {
+        font-size: 28px;
+    }
+
+
+}
+
+@media screen and (min-width: 1680px) {
+
+
+
+    .call-to-action {
+        max-width: 1680px; 
+        margin: 0 auto; 
+    }
+
+    .call-to-action__left {
+        margin-left: 0;
+    }
+
+    .call-to-action__right {
+        margin-right: 0;
+    }
+
+}

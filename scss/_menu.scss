@@ -1,0 +1,42 @@
+@use 'base';
+
+/* Menu */
+
+.menu {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__item {
+        list-style: none;
+        display: flex;
+    }
+    
+    &__link {
+        color: base.$color-primary;
+        text-decoration: none;
+        padding: 15px 50px;
+        font-weight: bolder;
+        font-size: base.$font-size-primary;
+    }
+
+    &__link:hover, &__link:focus, &__link:active {
+        color: #FFA223;
+    } 
+    
+    &__link--border {
+        color: white;
+        background-color: base.$color-primary;
+        border-radius: 5px;
+        padding: 13px 48px;
+        border: 2px solid base.$color-primary;
+    }
+
+
+    &__link--border:hover, &__link--border:focus, &__link--border:active {
+        background-color: transparent;
+        color: base.$color-primary;
+        border: 2px solid base.$color-primary;
+    }
+}
