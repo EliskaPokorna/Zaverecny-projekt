@@ -1,0 +1,41 @@
+@use 'base';
+
+
+.grid-row-2 {
+    padding: 20px;
+}
+
+.row__item {
+    margin-bottom: 40px;
+}
+
+
+@media screen and (min-width: 768px) {
+
+
+    .row {
+
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 40px;
+    }
+
+}
+
+@media screen and (min-width: 1440px) {
+
+    .grid-row-2 {
+        padding: 20px 80px;
+    }
+
+    .grid-row-2-1 {
+        max-width: 1680px;
+        margin: 0 auto
+    }
+
+    .row__third, .row__fourth {
+        margin-bottom: 80px;
+    }
+
+}

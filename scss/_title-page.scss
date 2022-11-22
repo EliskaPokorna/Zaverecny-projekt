@@ -1,0 +1,43 @@
+@use 'base';
+
+.title-page {
+    padding: 20px;
+}
+
+.title-page__text {
+    font-size: 22px;
+    color: base.$color-primary;
+}
+
+@media screen and (min-width: 768px) {
+
+    .title-page__text {
+        font-size: 38px;
+    }
+
+}
+
+@media screen and (min-width: 1440px) {
+
+    .title-page {
+        padding: 20px 80px;
+    }
+
+    .title-page__text {
+        font-size: 42px;
+    }
+
+}
+
+@media screen and (min-width: 1536px) {
+
+    .title-page {
+        max-width: 1680px;
+        margin: 0 auto;
+    }
+
+    .title-page__text {
+        font-size: 56px;
+    }
+
+}
