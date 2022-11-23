@@ -85,7 +85,7 @@ body {
     bottom: 60px;
   }
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1200px) {
   .header {
     height: 500px;
   }
@@ -191,7 +191,7 @@ body {
 .text {
   text-align: left;
   font-size: 16px;
-  margin: 16px 0;
+  margin-bottom: 0;
 }
 
 @media screen and (min-width: 768px) {
@@ -225,7 +225,7 @@ body {
     padding-top: 40px;
   }
   .subtitle {
-    font-size: 38px;
+    font-size: 48px;
     margin-bottom: 0;
   }
   .text--different {
@@ -513,7 +513,7 @@ body {
 }
 
 .title-page__text {
-  font-size: 28px;
+  font-size: 22px;
   color: #9C2A04;
 }
 
@@ -567,84 +567,10 @@ body {
     margin-bottom: 80px;
   }
 }
-/*Pruh foto + odrážky*/
 .foto-bullet {
   padding: 20px;
-  padding-top: 0;
 }
 
 .foto {
   max-width: 100%;
-}
-
-.bullet__text {
-  margin-bottom: 40px;
-}
-
-.bullet__point {
-  display: flex;
-  align-items: center;
-  margin-bottom: 20px;
-}
-
-.bullet__svg {
-  height: 40px;
-  margin-right: 20px;
-}
-
-@media screen and (min-width: 1024px) {
-  .flex-bullet {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
-  }
-  .flex-bullet__foto {
-    margin-right: 20px;
-  }
-}
-@media screen and (min-width: 1440px) {
-  .foto-bullet {
-    padding: 40px 80px 80px 80px;
-  }
-  .flex-bullet {
-    max-width: 1680px;
-    margin: 0 auto;
-  }
-  .flex-bullet__foto {
-    margin-right: 40px;
-  }
-}
-@media screen and (min-width: 1536px) {
-  .flex-bullet__foto {
-    margin-right: 100px;
-  }
-}
-/*Pruh foto + odrážky (otočený)*/
-@media screen and (min-width: 1024px) {
-  .flex-bullet--inverted {
-    flex-direction: row-reverse;
-    justify-content: flex-end;
-  }
-  .flex-bullet__foto--inverted {
-    margin: 0;
-    margin-left: 20px;
-  }
-}
-@media screen and (min-width: 1440px) {
-  .flex-bullet__foto--inverted {
-    margin: 0;
-    margin-left: 40px;
-  }
-}
-@media screen and (min-width: 1536px) {
-  .foto-bullet--invereted {
-    padding: 60px 80px 120px 80px;
-  }
-  .flex-bullet__foto--inverted {
-    margin: 0;
-    margin-left: 100px;
-  }
-  .bullet-text {
-    text-align: right;
-  }
 }/*# sourceMappingURL=style.css.map */
