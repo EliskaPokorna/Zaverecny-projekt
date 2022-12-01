@@ -18,10 +18,11 @@
 .link--kontakt {
     text-decoration: none;
     color: base.$color-primary;
+    text-decoration: underline;
 }
 
 .link--kontakt:hover, .link--kontakt:focus, .link--kontakt:active {
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 @media screen and (min-width: 768px) {
