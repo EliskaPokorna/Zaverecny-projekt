@@ -35,9 +35,17 @@
     max-width: 100%;
 }
 
-.footer__icon:hover {
-    background-color: black;
+a svg:hover #facebook-f {
+    fill: base.$color-primary;
 }
+
+a svg:hover #facebook-okoli {
+    fill: white;
+    stroke: base.$color-primary;
+    stroke-width: 2px;
+}
+
+
 
 @media screen and (min-width: 768px) {
 

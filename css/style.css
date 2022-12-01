@@ -4,39 +4,129 @@ body {
 }
 
 /* Menu */
-.menu {
-  padding: 20px 40px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
 .menu__item {
+  display: none;
   list-style: none;
-  display: flex;
+  padding: 0;
+  margin: 0;
+  background-color: #F0F0F0;
+}
+.menu__img {
+  padding-left: 20px;
+  margin: 20px 0;
 }
 .menu__link {
+  display: block;
   color: #9C2A04;
   text-decoration: none;
-  padding: 15px 50px;
-  font-weight: bolder;
-  font-size: 20px;
+  padding: 15px 20px;
+  font-weight: 600;
+  font-size: 18px;
 }
-.menu__link:hover, .menu__link:focus, .menu__link:active {
-  color: #FFA223;
+.menu__li {
+  border-bottom: 1px solid white;
 }
-.menu__link--border {
-  color: white;
-  background-color: #9C2A04;
-  border-radius: 5px;
-  padding: 13px 48px;
-  border: 2px solid #9C2A04;
-}
-.menu__link--border:hover, .menu__link--border:focus, .menu__link--border:active {
-  background-color: transparent;
-  color: #9C2A04;
-  border: 2px solid #9C2A04;
+.menu__li--specific {
+  border: 0;
 }
 
+.menu__checkbox:checked ~ .menu__item {
+  display: block;
+}
+
+.menu__toggler {
+  cursor: pointer;
+  display: block;
+  background-color: #FFA223;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+.menu__link:hover, .menu__link:focus, .menu__link:active {
+  background-color: #9C2A04;
+  color: white;
+}
+
+.menu__checkbox {
+  position: absolute;
+  left: -9999px;
+}
+
+@media screen and (min-width: 768px) {
+  .menu {
+    padding: 20px;
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .menu__item {
+    display: flex;
+    padding: 0;
+    background-color: transparent;
+  }
+  .menu__img {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+  .menu__link {
+    color: #9C2A04;
+    text-decoration: none;
+    padding: 15px 20px;
+    font-weight: bolder;
+    font-size: 20px;
+    border: 2px solid transparent;
+    border-radius: 6px;
+  }
+  .menu__link:hover, .menu__link:focus, .menu__link:active {
+    background-color: transparent;
+    color: #9C2A04;
+    border: 2px solid #9C2A04;
+  }
+  .menu__link--border {
+    color: white;
+    background-color: #9C2A04;
+    border-radius: 5px;
+    padding: 13px 48px;
+    border: 2px solid #9C2A04;
+  }
+  .menu__li {
+    margin: 4px;
+    border: 0;
+  }
+  .menu__toggler {
+    display: none;
+  }
+  .menu__list {
+    display: flex !important;
+  }
+  .menu__item {
+    border-bottom: 0;
+    border-right: 1px solid white;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .menu {
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .menu__link {
+    padding: 15px 40px;
+  }
+  .menu__img {
+    margin: 0;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .menu {
+    padding: 20px 80px;
+  }
+  .menu__link {
+    padding: 15px 50px;
+  }
+}
 /*Hlavička*/
 .header {
   background-image: url("../images/hlavicka.jpg");
@@ -315,7 +405,7 @@ body {
 }
 
 .button--basic {
-  padding: 10px 20px;
+  padding: 10px 30px;
   border: 1px solid #9C2A04;
   border-radius: 5px;
   font-weight: bold;
@@ -486,8 +576,14 @@ body {
   max-width: 100%;
 }
 
-.footer__icon:hover {
-  background-color: black;
+a svg:hover #facebook-f {
+  fill: #9C2A04;
+}
+
+a svg:hover #facebook-okoli {
+  fill: white;
+  stroke: #9C2A04;
+  stroke-width: 2px;
 }
 
 @media screen and (min-width: 768px) {
@@ -646,5 +742,185 @@ body {
   }
   .bullet-text {
     text-align: right;
+  }
+}
+/*Pruh foto*/
+@media screen and (min-width: 1024px) {
+  .bullet {
+    max-width: 50%;
+  }
+}
+/*Formulář*/
+.form-flash {
+  padding: 20px;
+  background-color: #F0F0F0;
+}
+
+.form__field {
+  margin-bottom: 20px;
+}
+.form__field label {
+  font-size: 16px;
+  color: grey;
+}
+.form__field input, .form__field textarea {
+  width: 92%;
+  padding: 10px;
+  border: 1px solid #FFA223;
+  color: black;
+}
+
+.text--different-form {
+  margin: 40px 0 20px 0;
+}
+
+.demand__arrow, .form-flash__svg {
+  display: none;
+}
+
+.button--form {
+  margin: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .demand {
+    display: flex;
+    align-items: center;
+    max-width: 768px;
+    margin: 0 auto;
+  }
+  .demand__text {
+    margin-right: 40px;
+  }
+  .demand__arrow {
+    display: block;
+    width: 350px;
+    margin-top: 40px;
+  }
+  .form {
+    margin: 0;
+    padding-bottom: 40px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .demand {
+    max-width: 1024px;
+    margin: 0 auto;
+  }
+  .form-flash {
+    padding: 40px 20px;
+  }
+  .demand__text {
+    margin-right: 80px;
+  }
+  .demand__form {
+    background-color: white;
+    padding: 10px 60px;
+    border: 1px solid #FFA223;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .demand {
+    max-width: 1680px;
+  }
+  .demand__text {
+    margin-right: 300px;
+  }
+  .form-flash__svg {
+    display: block;
+  }
+  .demand__arrow {
+    width: 400px;
+  }
+  .form-flash {
+    position: relative;
+    padding: 60px 20px;
+    z-index: 1;
+  }
+  .form-flash__svg {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    right: 0;
+    z-index: -1;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .form-flash {
+    padding: 80px 80px;
+  }
+  .demand__text {
+    margin-right: 260px;
+  }
+  .demand__arrow {
+    width: 500px;
+  }
+}
+@media screen and (min-width: 1536px) {
+  .demand__text {
+    margin-right: 340px;
+  }
+}
+@media screen and (min-width: 1680px) {
+  .form-flash {
+    padding: 120px 0;
+  }
+  .demand__text {
+    margin-right: 320px;
+  }
+  .demand__arrow {
+    width: 600px;
+  }
+  .demand {
+    max-width: 1536px;
+    margin: 0 auto;
+    position: relative;
+  }
+  .form-flash__svg {
+    position: absolute;
+    height: 149.5%;
+    top: -120px;
+    right: 0;
+  }
+}
+.flex-col-3-kontakt {
+  padding: 20px;
+  padding-bottom: 40px;
+}
+
+.flex-icon {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.text--kontakt {
+  text-align: center;
+}
+
+.link--kontakt {
+  text-decoration: none;
+  color: #9C2A04;
+}
+
+.link--kontakt:hover, .link--kontakt:focus, .link--kontakt:active {
+  text-decoration: underline;
+}
+
+@media screen and (min-width: 768px) {
+  .flex-icon {
+    flex-direction: row;
+    padding-bottom: 20px;
+    max-width: 1680px;
+    margin: 0 auto;
+  }
+  .flex-icon__column {
+    flex: 1 1 33.3333333333%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .flex-col-3-kontakt {
+    padding: 40px 80px 80px 80px;
+    margin: 0 40px;
   }
 }/*# sourceMappingURL=style.css.map */

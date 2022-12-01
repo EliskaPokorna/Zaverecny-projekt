@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Další služby</title>
+
+	<link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+<!--Menu-->
+
+<div class="menu">
+
+    <input type="checkbox" class="menu__checkbox" id="menu-checkbox">
+    <label for="menu-checkbox" class="menu__toggler">☰ Menu</label>
+
+        <ul class="menu__item"> 
+            <li class="menu__li"><a href="#" class="menu__link">Elektroinstalace</a></li> 
+            <li class="menu__li"><a href="#" class="menu__link">Další služby</a></li> 
+            <li class="menu__li"><a href="#" class="menu__link">Reference</a></li> 
+            <li class="menu__li menu__li--specific"><a href="#" class="menu__link menu__link--border">Kontakt</a></li> 
+        </ul> 
+
+        <div class="menu__logo">
+            <img class="menu__img" src="images/logo-menu.svg" alt="logo-menu">
+        </div>
+
+</div>
+
+<!--Nadpis na podstránce-->
+
+<div class="title-page">
+    <h1 class="title-page__text">Další služby</h1>
+</div>
+
+
+<!--Pruh foto-->
+
+<section class="foto-bullet">
+
+    <div class="flex-bullet">
+
+        <div class="flex-bullet__foto">
+            <img class="foto foto--specific" src="images/foto-leve.png" alt="rekonstrukce">
+        </div>
+
+        <div class="bullet">
+            <div class="bullet__text">
+                <h2 class="subtitle">Výroba rozvaděčů</h2>
+                <p class="text">Pomůžu vám s řeším rozvaděče nízkého napětí do 1000 V. Rozvaděče osazuji spolehlivými komponenty od předních výrobců. Provádím i opravy stávajících rozvaděčů. Vše dle požadavků zákazníka. Samozřejmostí je i zajištění revizní zprávy.</p>
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+<!--Pruh foto (otočený)-->
+
+<section class="foto-bullet foto-bullet--invereted">
+
+    <div class="flex-bullet flex-bullet--inverted">
+
+        <div class="flex-bullet__foto flex-bullet__foto--inverted">
+            <img class="foto foto--specific" src="images/foto-prave.png" alt="rekonstrukce">
+        </div>
+
+        <div class="bullet">
+            <div class="bullet__text">
+                <h2 class="subtitle">Montáže, opravy a zkoušky elektrických zařízení</h2>
+                <p class="text">Mám oprávnění provádět opravy, zkoušky i montáže technických zařízení určených pro výrobu, přeměnu, přenos apod. V této oblasti mám zkušenosti z nejrůznějších provozů. Sastavím nabídku přesně podle požadavků vašeho provozu.</p>
+            </div>
+
+            
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!--Formulář-->
+
+<section class="form-flash">
+
+    <div class="demand">
+        <img class="form-flash__svg" src="images/blesk-formular.svg" alt="blesk-formular">
+
+        <div class="demand__text">
+            <h2 class="subtitle">Nezávazně poptat?<br>Stačí vyplnit formulář.</h2>
+            <img class="demand__arrow" src="images/sipka-formular.svg" alt="sipka-formular">
+        </div>
+
+        <div class="demand__form">
+                        <form class="form" action="#" method="post">
+
+                <p class="text--different text--different-form">Napište mi</p>
+
+                <div class="form__field">
+
+                    <div class="form__field">
+                        <label for="jmeno"></label>
+                        <input type="text" name="jmeno" id="jmeno" placeholder="Jméno" required>
+                    </div>
+
+                    <div class=" form__field">
+                        <label for="prijmeni"></label>
+                        <input type="text" name="prijmeni" id="prijmeni" placeholder="Příjmení" required>
+                    </div>
+                </div>
+
+                <div class="form__field">
+                <label for="email"></label> 
+                <input type="email" name="email" id="email" placeholder="Vaše e-mailová adresa" required>
+                </div>
+
+                <div class="form__field">
+                <textarea name="adresa" id="adresa" cols="40" rows="5" placeholder="Vaše zpráva"></textarea>
+                </div>
+
+                <div class="form__button">
+                <button class="button--basic button--form" type="submit">Odeslat</button>
+                </div>
+
+            </form>
+        </div>
+
+    </div>
+</section>
+
+
+
+
+<!--Patička-->
+
+
+<footer class="footer">
+
+    <div class="footer__logo">
+        <img class="footer__img" src="images/logo-paticka.svg" alt="logo-footer">
+    </div>
+
+    <div class="footer__link">
+        <p class="footer__item">Sledujte mě:</p>
+        <a href="https://cs-cz.facebook.com/marek.radil/" target="_blank">
+            <svg width="55" height="70" viewBox="0 0 70 70" xmlns="http://www.w3.org/2000/svg">
+                <path id="facebook" d="M35 5.83325C18.8913 5.83325 5.83337 18.8912 5.83337 34.9999C5.83337 51.1087 18.8913 64.1666 35 64.1666C51.1088 64.1666 64.1667 51.1087 64.1667 34.9999C64.1667 18.8912 51.1088 5.83325 35 5.83325Z" fill="url(#paint0_linear_307_408)"/>
+                <path  d="M38.9477 42.7305H46.496L47.6816 35.0626H38.9477V30.8714C38.9477 27.6864 39.9889 24.8616 42.9683 24.8616H47.756V18.1707C46.9145 18.057 45.1354 17.8091 41.7739 17.8091C34.7535 17.8091 30.6381 21.5162 30.6381 29.9628V35.0641H23.4208V42.732H30.6366V63.8078C32.0658 64.0207 33.5139 64.1666 34.9999 64.1666C36.3431 64.1666 37.6541 64.0441 38.9477 63.8691V42.7305Z" fill="white"/>
+                <defs>
+                <linearGradient id="paint0_linear_307_408" x1="14.5732" y1="14.573" x2="59.2302" y2="59.2301" gradientUnits="userSpaceOnUse">
+                <stop offset="0.9999" stop-color="#9C2A04"/>
+                <stop offset="1" stop-color="#007AD9"/>
+                </linearGradient>
+                </defs>
+            </svg>
+        </a>
+    </div>
+    
+    <img class="line" src="images/linka.svg" alt="linka">
+
+
+    <div>
+        <p class="footer__text">Eliška Pokorná, 2022.<br>Webové stránky "na míru"</p>
+    </div>
+
+</footer>
+
+
+    
+</body>
+</html>

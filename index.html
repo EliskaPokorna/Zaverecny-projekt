@@ -15,20 +15,19 @@
 
 <div class="menu">
 
-    <div class="menu__logo">
-        <img src="images/logo-menu.svg" alt="logo-menu">
-    </div>
-
-    <div class="menu__list">
+    <input type="checkbox" class="menu__checkbox" id="menu-checkbox">
+    <label for="menu-checkbox" class="menu__toggler">☰ Menu</label>
 
         <ul class="menu__item"> 
-            <li><a href="#" class="menu__link">Elektroinstalace</a></li> 
-            <li><a href="#" class="menu__link">Další služby</a></li> 
-            <li><a href="#" class="menu__link">Reference</a></li> 
-            <li><a href="#" class="menu__link menu__link--border">Kontakt</a></li> 
+            <li class="menu__li"><a href="#" class="menu__link">Elektroinstalace</a></li> 
+            <li class="menu__li"><a href="#" class="menu__link">Další služby</a></li> 
+            <li class="menu__li"><a href="#" class="menu__link">Reference</a></li> 
+            <li class="menu__li menu__li--specific"><a href="#" class="menu__link menu__link--border">Kontakt</a></li> 
         </ul> 
 
-    </div>
+        <div class="menu__logo">
+            <img class="menu__img" src="images/logo-menu.svg" alt="logo-menu">
+        </div>
 
 </div>
 
@@ -210,10 +209,21 @@
 
     <div class="footer__link">
         <p class="footer__item">Sledujte mě:</p>
-        <img class="footer__icon" src="images/ikona-facebook.svg" alt="ikona-facebook">
+        <a href="https://cs-cz.facebook.com/marek.radil/" target="_blank">
+            <svg width="55" height="60" viewBox="0 0 70 70" xmlns="http://www.w3.org/2000/svg">
+                <path id="facebook-okoli" d="M35 5.83325C18.8913 5.83325 5.83337 18.8912 5.83337 34.9999C5.83337 51.1087 18.8913 64.1666 35 64.1666C51.1088 64.1666 64.1667 51.1087 64.1667 34.9999C64.1667 18.8912 51.1088 5.83325 35 5.83325Z" fill="url(#paint0_linear_307_408)"/>
+                <path id="facebook-f"  d="M38.9477 42.7305H46.496L47.6816 35.0626H38.9477V30.8714C38.9477 27.6864 39.9889 24.8616 42.9683 24.8616H47.756V18.1707C46.9145 18.057 45.1354 17.8091 41.7739 17.8091C34.7535 17.8091 30.6381 21.5162 30.6381 29.9628V35.0641H23.4208V42.732H30.6366V63.8078C32.0658 64.0207 33.5139 64.1666 34.9999 64.1666C36.3431 64.1666 37.6541 64.0441 38.9477 63.8691V42.7305Z" fill="white"/>
+                <defs>
+                <linearGradient id="paint0_linear_307_408" x1="14.5732" y1="14.573" x2="59.2302" y2="59.2301" gradientUnits="userSpaceOnUse">
+                <stop offset="0.9999" stop-color="#9C2A04"/>
+                <stop offset="1" stop-color="#007AD9"/>
+                </linearGradient>
+                </defs>
+            </svg>
+        </a>
     </div>
-
-        <img class="line" src="images/linka.svg" alt="linka">
+    
+    <img class="line" src="images/linka.svg" alt="linka">
 
 
     <div>

@@ -1,0 +1,49 @@
+@use 'base';
+
+.flex-col-3-kontakt {
+    padding: 20px;
+    padding-bottom: 40px;
+}
+
+.flex-icon {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.text--kontakt {
+    text-align: center;
+}
+
+.link--kontakt {
+    text-decoration: none;
+    color: base.$color-primary;
+}
+
+.link--kontakt:hover, .link--kontakt:focus, .link--kontakt:active {
+    text-decoration: underline;
+}
+
+@media screen and (min-width: 768px) {
+
+    .flex-icon {
+        flex-direction: row;
+        padding-bottom: 20px;
+        max-width: 1680px;
+        margin: 0 auto;
+    }
+
+    .flex-icon__column {
+        flex: 1 1 calc(100% / 3);
+    }
+
+}
+
+@media screen and (min-width: 768px) {
+
+    .flex-col-3-kontakt {
+        padding: 40px 80px 80px 80px;
+        margin: 0 40px;
+    }
+
+}
