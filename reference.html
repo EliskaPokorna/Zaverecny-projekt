@@ -1,44 +1,77 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reference</title>
+---
+layout: sablona.njk
+title: Reference
+---
 
-    <link rel="stylesheet" href="css/style.css">
 
-</head>
-<body>
-    
-<!--Menu-->
 
-<div class="menu">
-
-    <input type="checkbox" class="menu__checkbox" id="menu-checkbox">
-    <label for="menu-checkbox" class="menu__toggler">☰ Menu</label>
-
-        <ul class="menu__item"> 
-            <li class="menu__li"><a href="#" class="menu__link">Elektroinstalace</a></li> 
-            <li class="menu__li"><a href="#" class="menu__link">Další služby</a></li> 
-            <li class="menu__li"><a href="#" class="menu__link">Reference</a></li> 
-            <li class="menu__li menu__li--specific"><a href="#" class="menu__link menu__link--border">Kontakt</a></li> 
-        </ul> 
-
-        <div class="menu__logo">
-            <img class="menu__img" src="images/logo-menu.svg" alt="logo-menu">
-        </div>
-
-</div>
 
 <!--Nadpis na podstránce-->
 
 <div class="title-page">
-    <h1 class="title-page__text">Reference</h1>
+    <h1 class="title-page__text">Vybrané reference, inspirujte se...</h1>
 </div>
 
 
+<!--Reference-->
 
+
+
+<section class="grid-col-reference">
+
+    <div class="reference">
+
+        <div class="reference__photo">
+                <img class="reference__img" src="/images/reference-1.png" alt="reference-1">
+            <div class="reference__text">
+                <p class="text--different">Rekonstrukce bytu v Plané</p>
+                <p class="text text--reference">V roce 2022 proběhla kompletní rekonstrukce bytu v Plané. Zákazníkovi jsem poradil, společně jsme akci naplánovali, připravil jsem novou kabeláž i rozvaděč. Nakonec bylo vše zapojeno a také předána revizní zpráva.</p>
+            </div>
+        </div>
+
+        <div class="reference__photo">
+                <img class="reference__img" src="/images/reference-2.png" alt="reference-2">
+            <div class="reference__text">
+                <p class="text--different">Lorem ipsum dolor sit amet</p>
+                <p class="text text--reference">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia necessitatibus, alias, eveniet odio tempora recusandae possimus optio aperiam culpa doloremque quam libero tenetur, quod consectetur</p>
+            </div>
+        </div>
+
+        <div class="reference__photo">
+                <img class="reference__img" src="/images/reference-1.png" alt="reference-2">
+            <div class="reference__text">
+                <p class="text--different">Lorem ipsum dolor sit amet</p>
+                <p class="text text--reference">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia necessitatibus, alias, eveniet odio tempora recusandae possimus optio aperiam culpa doloremque quam libero tenetur, quod consectetur</p>
+            </div>
+        </div>
+
+        <div class="reference__photo">
+                <img class="reference__img" src="/images/reference-2.png" alt="reference-2">
+            <div class="reference__text">
+                <p class="text--different">Lorem ipsum dolor sit amet</p>
+                <p class="text text--reference">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia necessitatibus, alias, eveniet odio tempora recusandae possimus optio aperiam culpa doloremque quam libero tenetur, quod consectetur</p>
+            </div>
+        </div>
+
+        <div class="reference__photo">
+                <img class="reference__img" src="/images/reference-1.png" alt="reference-2">
+            <div class="reference__text">
+              <p class="text--different">Lorem ipsum dolor sit amet</p>
+              <p class="text text--reference">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia necessitatibus, alias, eveniet odio tempora recusandae possimus optio aperiam culpa doloremque quam libero tenetur, quod consectetur</p>
+            </div>
+        </div>
+
+        <div class="reference__photo">
+                <img class="reference__img" src="/images/reference-2.png" alt="reference-2">
+            <div class="reference__text">
+                <p class="text--different">Lorem ipsum dolor sit amet</p>
+                <p class="text text--reference">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia necessitatibus, alias, eveniet odio tempora recusandae possimus optio aperiam culpa doloremque quam libero tenetur, quod consectetur</p>
+            </div>
+        </div>
+
+    </div>
+
+</section>
 
 
 <!--Formulář-->
@@ -46,11 +79,11 @@
 <section class="form-flash">
 
     <div class="demand">
-        <img class="form-flash__svg" src="images/blesk-formular.svg" alt="blesk-formular">
+        <img class="form-flash__svg" src="/images/blesk-formular.svg" alt="blesk-formular">
 
         <div class="demand__text">
             <h2 class="subtitle">Nezávazně poptat?<br>Stačí vyplnit formulář.</h2>
-            <img class="demand__arrow" src="images/sipka-formular.svg" alt="sipka-formular">
+            <img class="demand__arrow" src="/images/sipka-formular.svg" alt="sipka-formular">
         </div>
 
         <div class="demand__form">
@@ -91,43 +124,3 @@
 </section>
 
 
-
-
-
-<!--Patička-->
-
-
-<footer class="footer">
-
-    <div class="footer__logo">
-        <img class="footer__img" src="images/logo-paticka.svg" alt="logo-footer">
-    </div>
-
-    <div class="footer__link">
-        <p class="footer__item">Sledujte mě:</p>
-        <a href="https://cs-cz.facebook.com/marek.radil/" target="_blank">
-            <svg width="55" height="70" viewBox="0 0 70 70" xmlns="http://www.w3.org/2000/svg">
-                <path id="facebook" d="M35 5.83325C18.8913 5.83325 5.83337 18.8912 5.83337 34.9999C5.83337 51.1087 18.8913 64.1666 35 64.1666C51.1088 64.1666 64.1667 51.1087 64.1667 34.9999C64.1667 18.8912 51.1088 5.83325 35 5.83325Z" fill="url(#paint0_linear_307_408)"/>
-                <path  d="M38.9477 42.7305H46.496L47.6816 35.0626H38.9477V30.8714C38.9477 27.6864 39.9889 24.8616 42.9683 24.8616H47.756V18.1707C46.9145 18.057 45.1354 17.8091 41.7739 17.8091C34.7535 17.8091 30.6381 21.5162 30.6381 29.9628V35.0641H23.4208V42.732H30.6366V63.8078C32.0658 64.0207 33.5139 64.1666 34.9999 64.1666C36.3431 64.1666 37.6541 64.0441 38.9477 63.8691V42.7305Z" fill="white"/>
-                <defs>
-                <linearGradient id="paint0_linear_307_408" x1="14.5732" y1="14.573" x2="59.2302" y2="59.2301" gradientUnits="userSpaceOnUse">
-                <stop offset="0.9999" stop-color="#9C2A04"/>
-                <stop offset="1" stop-color="#007AD9"/>
-                </linearGradient>
-                </defs>
-            </svg>
-        </a>
-    </div>
-    
-    <img class="line" src="images/linka.svg" alt="linka">
-
-
-    <div>
-        <p class="footer__text">Eliška Pokorná, 2022.<br>Webové stránky "na míru"</p>
-    </div>
-
-</footer>
-
-    
-</body>
-</html>

@@ -45,7 +45,7 @@
 	cursor: pointer;
     display: block;
     background-color: #FFA223;
-    padding: 10px 20px;
+    padding: 20px;
     text-transform: uppercase;
     font-size: 18px;
 }
@@ -117,11 +117,11 @@
 		display: none;
 	}
 
-	.menu__list {
+	.menu__item {
 		display: flex !important;
 	}
 
-	.menu__item {
+	.menu__li {
 		border-bottom: 0;
 		border-right: 1px solid white;    
 	}

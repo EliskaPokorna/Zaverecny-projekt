@@ -1,35 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elektro Radil</title>
+---
+layout: sablona.njk
+title: Úvodní stránka
+---
 
-	<link rel="stylesheet" href="css/style.css">
-
-</head>
-<body>
-    
-<!--Menu-->
-
-<div class="menu">
-
-    <input type="checkbox" class="menu__checkbox" id="menu-checkbox">
-    <label for="menu-checkbox" class="menu__toggler">☰ Menu</label>
-
-        <ul class="menu__item"> 
-            <li class="menu__li"><a href="#" class="menu__link">Elektroinstalace</a></li> 
-            <li class="menu__li"><a href="#" class="menu__link">Další služby</a></li> 
-            <li class="menu__li"><a href="#" class="menu__link">Reference</a></li> 
-            <li class="menu__li menu__li--specific"><a href="#" class="menu__link menu__link--border">Kontakt</a></li> 
-        </ul> 
-
-        <div class="menu__logo">
-            <img class="menu__img" src="images/logo-menu.svg" alt="logo-menu">
-        </div>
-
-</div>
 
 <!--Hlavička-->
 
@@ -44,8 +17,8 @@
     </div>
 
     <div class="flash">
-        <img class="flash__first" src="images/blesk-hlavicka.svg" alt="blesk-hlavicka">
-        <img class="flash__second" src="images/blesk-hlavicka.svg" alt="blesk-hlavicka">
+        <img class="flash__first" src="/images/blesk-hlavicka.svg" alt="blesk-hlavicka">
+        <img class="flash__second" src="/images/blesk-hlavicka.svg" alt="blesk-hlavicka">
     </div>
 
 </header>
@@ -59,19 +32,19 @@
     <div class="icon">
 
         <div class="icon__column">
-            <img class="icon__svg" src="images/ikona-nabidka.svg" alt="ikona-1">
+            <img class="icon__svg" src="/images/ikona-nabidka.svg" alt="ikona-1">
             <p class="text--different">Nabídka pro fyzické i právnické osoby</p>
             <p class="text">Nabízím kompletní elektroinstalační práce pro fyzické i právnické osoby. Pomůžu vám i poradím.</p>
         </div>
 
         <div class="icon__column">
-            <img class="icon__svg" src="images/ikona-lidi.svg" alt="ikona-2">
+            <img class="icon__svg" src="/images/ikona-lidi.svg" alt="ikona-2">
             <p class="text--different">Individuální přístup a férovost</p>
             <p class="text">Zakládám si na individuální přístupu a férovosti ke každému. Cena je jasně domluvená.</p>
         </div>
 
         <div class="icon__column">
-            <img class="icon__svg" src="images/ikona-clovek.svg" alt="ikona-3">
+            <img class="icon__svg" src="/images/ikona-clovek.svg" alt="ikona-3">
             <p class="text--different">Vše “na míru” dle potřeb zákazníka</p>
             <p class="text">Každá realizace je jiná, a proto veškeré kroky konzultuji se svými zákazníky. Také vím, že každý má odlišné představy.</p>
         </div>
@@ -94,25 +67,25 @@
     <div class="card">
 
         <div class="card__column">
-            <img class="card__img" src="images/karta-1.png" alt="foto-1">
+            <img class="card__img" src="/images/karta-1.png" alt="foto-1">
             <p class="text--different">Rekonstrukce</p>
             <p class="text">Pomůžu vám s kompletní rekonstrukcí elektřiny od tažení kabelů, zapojení až po revizi.</p>
         </div>
 
         <div class="card__column">
-            <img class="card__img" src="images/karta-2.png" alt="foto-1">
+            <img class="card__img" src="/images/karta-2.png" alt="foto-1">
             <p class="text--different">Opravy</p>
             <p class="text">Provádím i drobnější opravy stávající elektroinstalace.</p>
         </div>
 
         <div class="card__column">
-            <img class="card__img" src="images/karta-3.png" alt="foto-1">
+            <img class="card__img" src="/images/karta-3.png" alt="foto-1">
             <p class="text--different">Nová stavba</p>
             <p class="text">Pomůžu vám s plánováním, realizací i revizní zprávou. Připravím vše potřebné.</p>
         </div>
 
         <div class="card__column card__column--end">
-            <img class="card__img" src="images/karta-4.png" alt="foto-1">
+            <img class="card__img" src="/images/karta-4.png" alt="foto-1">
             <p class="text--different">Další</p>
             <p class="text">Zabezpečovací systémy, anténní a internetové rozvody i chytrá domácnost.</p>
         </div>
@@ -192,50 +165,8 @@
             <a class="button--basic button--flash" href="#">Kontaktovat</a>
         </div>
 
-        <img class="svg--flash" src="images/blesk-zluty-pruh.svg" alt="blesk-zluty-pruh">
+        <img class="svg--flash" src="/images/blesk-zluty-pruh.svg" alt="blesk-zluty-pruh">
 
     </div>
 
 </div>
-
-<!--Patička-->
-
-
-<footer class="footer">
-
-    <div class="footer__logo">
-        <img class="footer__img" src="images/logo-paticka.svg" alt="logo-footer">
-    </div>
-
-    <div class="footer__link">
-        <p class="footer__item">Sledujte mě:</p>
-        <a href="https://cs-cz.facebook.com/marek.radil/" target="_blank">
-            <svg width="55" height="60" viewBox="0 0 70 70" xmlns="http://www.w3.org/2000/svg">
-                <path id="facebook-okoli" d="M35 5.83325C18.8913 5.83325 5.83337 18.8912 5.83337 34.9999C5.83337 51.1087 18.8913 64.1666 35 64.1666C51.1088 64.1666 64.1667 51.1087 64.1667 34.9999C64.1667 18.8912 51.1088 5.83325 35 5.83325Z" fill="url(#paint0_linear_307_408)"/>
-                <path id="facebook-f"  d="M38.9477 42.7305H46.496L47.6816 35.0626H38.9477V30.8714C38.9477 27.6864 39.9889 24.8616 42.9683 24.8616H47.756V18.1707C46.9145 18.057 45.1354 17.8091 41.7739 17.8091C34.7535 17.8091 30.6381 21.5162 30.6381 29.9628V35.0641H23.4208V42.732H30.6366V63.8078C32.0658 64.0207 33.5139 64.1666 34.9999 64.1666C36.3431 64.1666 37.6541 64.0441 38.9477 63.8691V42.7305Z" fill="white"/>
-                <defs>
-                <linearGradient id="paint0_linear_307_408" x1="14.5732" y1="14.573" x2="59.2302" y2="59.2301" gradientUnits="userSpaceOnUse">
-                <stop offset="0.9999" stop-color="#9C2A04"/>
-                <stop offset="1" stop-color="#007AD9"/>
-                </linearGradient>
-                </defs>
-            </svg>
-        </a>
-    </div>
-    
-    <img class="line" src="images/linka.svg" alt="linka">
-
-
-    <div>
-        <p class="footer__text">Eliška Pokorná, 2022.<br>Webové stránky "na míru"</p>
-    </div>
-
-</footer>
-
-
-
-
-
-
-</body>
-</html>

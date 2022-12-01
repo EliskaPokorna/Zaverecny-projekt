@@ -1,36 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kontakt</title>
-
-    <link rel="stylesheet" href="css/style.css">
-
-</head>
-<body>
+---
+layout: sablona.njk
+title: Kontakt
+---
 
 
-<!--Menu-->
-
-<div class="menu">
-
-    <input type="checkbox" class="menu__checkbox" id="menu-checkbox">
-    <label for="menu-checkbox" class="menu__toggler">☰ Menu</label>
-
-        <ul class="menu__item"> 
-            <li class="menu__li"><a href="#" class="menu__link">Elektroinstalace</a></li> 
-            <li class="menu__li"><a href="#" class="menu__link">Další služby</a></li> 
-            <li class="menu__li"><a href="#" class="menu__link">Reference</a></li> 
-            <li class="menu__li menu__li--specific"><a href="#" class="menu__link menu__link--border">Kontakt</a></li> 
-        </ul> 
-
-        <div class="menu__logo">
-            <img class="menu__img" src="images/logo-menu.svg" alt="logo-menu">
-        </div>
-
-</div>
 
 <!--Nadpis na podstránce-->
 
@@ -45,17 +18,17 @@
     <div class="flex-icon">
 
         <div class="flex-icon__column">
-            <img class="icon__svg icon__svg--kontakt" src="images/telefon.svg" alt="ikona-1">
+            <img class="icon__svg icon__svg--kontakt" src="/images/telefon.svg" alt="ikona-1">
             <p class="text--different text--kontakt">Telefon: <a class="link--kontakt" href="tel:+420773260077">+420 773 260 077</a></p>
         </div>
 
         <div class="flex-icon__column">
-            <img class="icon__svg icon__svg--kontakt" src="images/e-mail.svg" alt="ikona-2">
+            <img class="icon__svg icon__svg--kontakt" src="/images/e-mail.svg" alt="ikona-2">
             <p class="text--different text--kontakt">E-mail: <a class="link--kontakt" href="mailto:radilelektro@email.cz">radilelektro@email.cz</a></p>
         </div>
 
         <div class="flex-icon__column">
-            <img class="icon__svg icon__svg--kontakt" src="images/facebook.svg" alt="ikona-3">
+            <img class="icon__svg icon__svg--kontakt" src="/images/facebook.svg" alt="ikona-3">
             <p class="text--different text--kontakt">Sledujte mě: <a class="link--kontakt" href="https://cs-cz.facebook.com/marek.radil/" target="_blank"> Facebook</a></p>
         </div>
 
@@ -71,11 +44,11 @@
 <section class="form-flash">
 
     <div class="demand">
-        <img class="form-flash__svg" src="images/blesk-formular.svg" alt="blesk-formular">
+        <img class="form-flash__svg" src="/images/blesk-formular.svg" alt="blesk-formular">
 
         <div class="demand__text">
             <h2 class="subtitle">Nezávazně poptat?<br>Stačí vyplnit formulář.</h2>
-            <img class="demand__arrow" src="images/sipka-formular.svg" alt="sipka-formular">
+            <img class="demand__arrow" src="/images/sipka-formular.svg" alt="sipka-formular">
         </div>
 
         <div class="demand__form">
@@ -120,41 +93,3 @@
 
 <iframe loading="lazy" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d169349.35469998367!2d12.707021529789216!3d49.88463074999442!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a07bdff9da4347%3A0xa75cceae915a0a72!2sM%C3%A1nesova%20685%2C%20348%2015%20Plan%C3%A1!5e0!3m2!1scs!2scz!4v1669636607769!5m2!1scs!2scz" width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
-<!--Patička-->
-
-
-<footer class="footer">
-
-    <div class="footer__logo">
-        <img class="footer__img" src="images/logo-paticka.svg" alt="logo-footer">
-    </div>
-
-    <div class="footer__link">
-        <p class="footer__item">Sledujte mě:</p>
-        <a href="https://cs-cz.facebook.com/marek.radil/" target="_blank">
-            <svg width="55" height="70" viewBox="0 0 70 70" xmlns="http://www.w3.org/2000/svg">
-                <path id="facebook" d="M35 5.83325C18.8913 5.83325 5.83337 18.8912 5.83337 34.9999C5.83337 51.1087 18.8913 64.1666 35 64.1666C51.1088 64.1666 64.1667 51.1087 64.1667 34.9999C64.1667 18.8912 51.1088 5.83325 35 5.83325Z" fill="url(#paint0_linear_307_408)"/>
-                <path  d="M38.9477 42.7305H46.496L47.6816 35.0626H38.9477V30.8714C38.9477 27.6864 39.9889 24.8616 42.9683 24.8616H47.756V18.1707C46.9145 18.057 45.1354 17.8091 41.7739 17.8091C34.7535 17.8091 30.6381 21.5162 30.6381 29.9628V35.0641H23.4208V42.732H30.6366V63.8078C32.0658 64.0207 33.5139 64.1666 34.9999 64.1666C36.3431 64.1666 37.6541 64.0441 38.9477 63.8691V42.7305Z" fill="white"/>
-                <defs>
-                <linearGradient id="paint0_linear_307_408" x1="14.5732" y1="14.573" x2="59.2302" y2="59.2301" gradientUnits="userSpaceOnUse">
-                <stop offset="0.9999" stop-color="#9C2A04"/>
-                <stop offset="1" stop-color="#007AD9"/>
-                </linearGradient>
-                </defs>
-            </svg>
-        </a>
-    </div>
-    
-    <img class="line" src="images/linka.svg" alt="linka">
-
-
-    <div>
-        <p class="footer__text">Eliška Pokorná, 2022.<br>Webové stránky "na míru"</p>
-    </div>
-
-</footer>
-
-
-    
-</body>
-</html>
