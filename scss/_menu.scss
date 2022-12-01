@@ -39,6 +39,14 @@
 
 }
 
+.menu a {
+    font-weight: 100;
+}
+
+.menu__li:last-child>a {
+    font-weight: 900;
+}
+
 .menu__checkbox:checked ~ .menu__item {
     display: block;
 }
@@ -90,7 +98,6 @@
             color: base.$color-primary;
             text-decoration: none;
             padding: 15px 20px;
-            font-weight: bolder;
             font-size: base.$font-size-primary;
             border-radius: 6px;
         }
@@ -101,7 +108,6 @@
         } 
 
         &__link--border {
-            font-weight: bold;
             color: #9C2A04;
             background-color: transparent;
             border-radius: 5px;
