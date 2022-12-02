@@ -38,7 +38,7 @@ body {
 }
 
 .menu__li:last-child > a {
-  font-weight: 900;
+  font-weight: bold;
 }
 
 .menu__checkbox:checked ~ .menu__item {
@@ -323,14 +323,14 @@ body {
     padding-top: 40px;
   }
   .subtitle {
-    font-size: 38px;
+    font-size: 32px;
     margin-bottom: 0;
   }
   .text--different {
-    font-size: 24px;
+    font-size: 22px;
   }
   .text {
-    font-size: 20px;
+    font-size: 18px;
   }
   .icon__svg {
     height: 80px;
@@ -412,21 +412,61 @@ body {
   margin-bottom: 10px;
 }
 
-.button--basic {
-  padding: 10px 30px;
-  border: 1px solid #9C2A04;
-  border-radius: 5px;
-  font-weight: bold;
-  font-size: 16px;
-  margin: 20px;
-  background-color: white;
-  color: #9C2A04;
-  text-decoration: none;
-}
-
+/*.button--basic {
+    padding: 10px 30px;
+    border: 1px solid base.$color-primary;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: base.$font-size-third;
+    margin: base.$m-spacer-primary;
+    background-color: white;
+    color: base.$color-primary;
+    text-decoration: none;
+}*/
 .button--basic:hover, .button--basic:focus, .button--basic:active {
   background-color: #9C2A04;
   color: white;
+}
+
+.button--basic {
+  display: inline-block;
+  border-radius: 5px;
+  background-color: white;
+  border: 1px solid #9C2A04;
+  color: #9C2A04;
+  font-weight: bold;
+  text-align: center;
+  font-size: 16px;
+  padding: 15px 30px;
+  width: 200px;
+  transition: all 0.3s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button--basic span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.3s;
+}
+
+.button--basic span:after {
+  content: "»";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.3s;
+}
+
+.button--basic:hover span {
+  padding-right: 25px;
+}
+
+.button--basic:hover span:after {
+  opacity: 1;
+  right: 0;
 }
 
 @media screen and (min-width: 1024px) {
@@ -467,6 +507,9 @@ body {
   .text-button {
     padding-bottom: 80px;
     padding-top: 80px;
+  }
+  .button--basic {
+    font-size: 18px;
   }
 }
 @media screen and (min-width: 1680px) {
@@ -641,7 +684,7 @@ a svg:hover #facebook-okoli {
     margin: 0;
   }
   .title-page__text {
-    font-size: 56px;
+    font-size: 48px;
   }
 }
 .grid-row-2 {
@@ -680,6 +723,7 @@ a svg:hover #facebook-okoli {
 
 .foto {
   max-width: 100%;
+  margin-top: 20px;
 }
 
 .bullet__text {
@@ -789,7 +833,8 @@ a svg:hover #facebook-okoli {
 
 .button--form {
   margin: 0;
-  cursor: pointer;
+  padding: 10px;
+  width: 150px;
 }
 
 @media screen and (min-width: 768px) {
@@ -921,18 +966,20 @@ a svg:hover #facebook-okoli {
 @media screen and (min-width: 768px) {
   .flex-icon {
     flex-direction: row;
-    padding-bottom: 20px;
-    max-width: 1680px;
-    margin: 0 auto;
+    flex-wrap: wrap;
+    justify-content: space-around;
   }
   .flex-icon__column {
-    flex: 1 1 33.3333333333%;
+    margin-bottom: 60px;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1440px) {
   .flex-col-3-kontakt {
     padding: 40px 80px 80px 80px;
-    margin: 0 40px;
+  }
+  .flex-icon {
+    max-width: 1680px;
+    margin: 0 auto;
   }
 }
 .reference {
