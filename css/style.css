@@ -162,7 +162,7 @@ body {
     position: relative;
   }
   .title__text {
-    font-size: 38px;
+    font-size: 32px;
     margin: 0;
     padding-top: 160px;
     text-align: center;
@@ -176,10 +176,10 @@ body {
   }
   .flash__first {
     top: 80px;
-    left: 40px;
+    left: 20px;
   }
   .flash__second {
-    right: 40px;
+    right: 20px;
     bottom: 60px;
   }
 }
@@ -192,11 +192,14 @@ body {
   }
   .flash__first {
     top: 80px;
-    left: 60px;
+    left: 40px;
   }
   .flash__second {
-    right: 60px;
+    right: 40px;
     bottom: 60px;
+  }
+  .title__text {
+    font-size: 38px;
   }
 }
 @media screen and (min-width: 1440px) {
@@ -294,7 +297,7 @@ body {
 
 @media screen and (min-width: 768px) {
   .subtitle {
-    font-size: 32px;
+    font-size: 28px;
     margin-bottom: 0;
   }
   .icon {
