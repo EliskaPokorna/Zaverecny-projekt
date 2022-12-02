@@ -2,7 +2,7 @@
 
 /*Pruh dva sloupce - co dále nabízím?*/
 
-.grid-col-2 {
+.flex-col-2 {
     padding: base.$p-spacer-primary;
 }
 
@@ -22,24 +22,29 @@
 @media screen and (min-width: 768px) {
 
     .column {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        display: flex;
+    }
+
+    .column__first, .column__second {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex: 1 1 calc(100% / 2);     
     }
 
     .column__second {
-        padding-left: 40px;
+        margin-left: 40px;
     }
-
 }
 
 @media screen and (min-width: 1440px) {
 
-    .grid-col-2 {
+    .flex-col-2 {
         padding: 20px 80px;
         padding-bottom: 80px;
     }
 
-    .grid-col-2-1 {
+    .flex-col-2-1 {
         max-width: 1680px;
         margin: 0 auto;
     }
