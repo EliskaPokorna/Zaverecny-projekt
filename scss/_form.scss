@@ -132,6 +132,20 @@
 
 }
 
+@media screen and (min-width: 1440px) {
+
+    .form-flash {
+        padding-left: 0;
+    }
+
+   .demand {
+    padding-left: 80px;
+   } 
+
+    
+}
+
+
 @media screen and (min-width: 1680px) {
 
     .form-flash {
@@ -159,11 +173,5 @@
         right: -80px;
     }
 
-
-
-
-
-
 }
-
 
