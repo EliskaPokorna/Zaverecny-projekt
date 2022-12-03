@@ -39,11 +39,6 @@
 
 @media screen and (min-width: 1024px) {
 
-    .reference {
-        max-width: 1680px;
-        margin: 0 auto;
-    }
-
     .reference__photo {
         position: relative;
         overflow: hidden;
@@ -90,6 +85,8 @@
 
     .reference {
         gap: 40px;
+        max-width: 1680px;
+        margin: 0 auto;
     }
 
 }

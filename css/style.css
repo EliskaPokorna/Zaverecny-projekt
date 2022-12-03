@@ -849,6 +849,7 @@ a svg:hover #facebook-okoli {
   .demand {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     max-width: 768px;
     margin: 0 auto;
   }
@@ -886,6 +887,9 @@ a svg:hover #facebook-okoli {
   .demand {
     max-width: 1680px;
   }
+  .demand__form {
+    margin-right: 120px;
+  }
   .demand__text {
     margin-right: 300px;
   }
@@ -908,22 +912,6 @@ a svg:hover #facebook-okoli {
     z-index: -1;
   }
 }
-@media screen and (min-width: 1440px) {
-  .form-flash {
-    padding: 80px 80px;
-  }
-  .demand__text {
-    margin-right: 260px;
-  }
-  .demand__arrow {
-    width: 500px;
-  }
-}
-@media screen and (min-width: 1536px) {
-  .demand__text {
-    margin-right: 340px;
-  }
-}
 @media screen and (min-width: 1680px) {
   .form-flash {
     padding: 120px 0;
@@ -941,9 +929,9 @@ a svg:hover #facebook-okoli {
   }
   .form-flash__svg {
     position: absolute;
-    height: 149.5%;
+    height: 148.5%;
     top: -120px;
-    right: 0;
+    right: -80px;
   }
 }
 .flex-col-3-kontakt {
@@ -1017,10 +1005,6 @@ a svg:hover #facebook-okoli {
   }
 }
 @media screen and (min-width: 1024px) {
-  .reference {
-    max-width: 1680px;
-    margin: 0 auto;
-  }
   .reference__photo {
     position: relative;
     overflow: hidden;
@@ -1056,6 +1040,8 @@ a svg:hover #facebook-okoli {
   }
   .reference {
     gap: 40px;
+    max-width: 1680px;
+    margin: 0 auto;
   }
 }
 body, input, textarea, .button--form {

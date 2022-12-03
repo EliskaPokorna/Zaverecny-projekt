@@ -47,6 +47,7 @@
     .demand {
         display: flex;
         align-items: center;
+        justify-content: space-between;
         max-width: 768px;
         margin: 0 auto;
     }
@@ -98,6 +99,10 @@
         max-width: 1680px;
     }
 
+    .demand__form {
+        margin-right: 120px;
+    }
+
     .demand__text {
         margin-right: 300px;
     }
@@ -127,30 +132,6 @@
 
 }
 
-
-@media screen and (min-width: 1440px) {
-
-    .form-flash {
-        padding: 80px 80px;
-    }
-
-    .demand__text {
-        margin-right: 260px;
-    }
-
-    .demand__arrow {
-        width: 500px;
-    }
-}
-
-@media screen and (min-width: 1536px) {
-
-    .demand__text {
-        margin-right: 340px;
-    }
-
-}
-
 @media screen and (min-width: 1680px) {
 
     .form-flash {
@@ -173,9 +154,9 @@
 
     .form-flash__svg {
         position: absolute;
-        height: 149.5%;
+        height: 148.5%;
         top: -120px;
-        right: 0;
+        right: -80px;
     }
 
 
