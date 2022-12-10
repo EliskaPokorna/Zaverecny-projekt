@@ -4,6 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/favicon/site.webmanifest">
+    <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
     <title>Elektro Radil</title>
 
 	<link rel="stylesheet" href="/css/style.css">
@@ -12,10 +23,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap" rel="stylesheet">
 
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
 </head>
 <body>
@@ -28,10 +36,10 @@
     <label for="menu-checkbox" class="menu__toggler">☰ Menu</label>
 
         <ul class="menu__list"> 
-            <li class="menu__item"><a href="/elektroinstalace" class="menu__link">Elektroinstalace</a></li> 
-            <li class="menu__item"><a href="/dalsi-sluzby" class="menu__link">Další služby</a></li> 
-            <li class="menu__item"><a href="/reference" class="menu__link">Reference</a></li> 
-            <li class="menu__item menu__item--specific"><a href="/kontakt" class="menu__link menu__link--border">Kontakt</a></li> 
+            <li class="menu__item {{ 'menu__item--active' if page.fileSlug === 'elektroinstalace' }}"><a href="/elektroinstalace" class="menu__link">Elektroinstalace</a></li> 
+            <li class="menu__item {{ 'menu__item--active' if page.fileSlug === 'dalsi-sluzby' }}"><a href="/dalsi-sluzby" class="menu__link">Další služby</a></li> 
+            <li class="menu__item {{ 'menu__item--active' if page.fileSlug === 'reference' }}"><a href="/reference" class="menu__link">Reference</a></li> 
+            <li class="menu__item {{ 'menu__item--active' if page.fileSlug === 'kontakt' }} menu__item--specific"><a href="/kontakt" class="menu__link menu__link--border">Kontakt</a></li> 
         </ul> 
 
         <div class="menu__logo">

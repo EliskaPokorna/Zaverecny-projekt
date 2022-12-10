@@ -39,6 +39,11 @@
 
 }
 
+.menu__item--active .menu__link {
+    background-color: #9C2A04;
+    color: white;
+}
+
 .menu a {
     font-weight: 100;
 }
