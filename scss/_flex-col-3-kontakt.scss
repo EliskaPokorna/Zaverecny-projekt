@@ -37,7 +37,27 @@
         margin-bottom: 60px;
     }
 
+    @keyframes pohyb {
+        50% {
+            transform: scale(1.08);
+        }
+
+        100% {
+            transform: scale(1);
+        }
+    }
+
+    .icon__svg--kontakt {
+        animation: pohyb 2s 3s infinite alternate ease both;
+        animation-name: pohyb;
+        animation-duration: 2.5s;
+        animation-delay: 0s;
+        animation-timing-function: ease-in;
+        animation-fill-mode: both;
+    }
+
 }
+
 
 @media screen and (min-width: 1440px) {
 

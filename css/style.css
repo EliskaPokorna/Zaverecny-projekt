@@ -694,7 +694,6 @@ a svg:hover #facebook-okoli {
   .title-page {
     max-width: 1680px;
     margin: 0 auto;
-    margin: 0;
   }
   .title-page__text {
     font-size: 48px;
@@ -980,6 +979,36 @@ a svg:hover #facebook-okoli {
   }
   .flex-icon__column {
     margin-bottom: 60px;
+  }
+  @-webkit-keyframes pohyb {
+    50% {
+      transform: scale(1.08);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  @keyframes pohyb {
+    50% {
+      transform: scale(1.08);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  .icon__svg--kontakt {
+    -webkit-animation: pohyb 2s 3s infinite alternate ease both;
+            animation: pohyb 2s 3s infinite alternate ease both;
+    -webkit-animation-name: pohyb;
+            animation-name: pohyb;
+    -webkit-animation-duration: 2.5s;
+            animation-duration: 2.5s;
+    -webkit-animation-delay: 0s;
+            animation-delay: 0s;
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
   }
 }
 @media screen and (min-width: 1440px) {
