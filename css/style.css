@@ -948,7 +948,7 @@ a svg:hover #facebook-okoli {
 }
 .flex-col-3-kontakt {
   padding: 20px;
-  padding-bottom: 40px;
+  padding-bottom: 10px;
 }
 
 .flex-icon {
@@ -967,7 +967,9 @@ a svg:hover #facebook-okoli {
   text-decoration: underline;
 }
 
-.link--kontakt:hover, .link--kontakt:focus, .link--kontakt:active {
+.link--kontakt:hover,
+.link--kontakt:focus,
+.link--kontakt:active {
   text-decoration: none;
 }
 
@@ -978,7 +980,7 @@ a svg:hover #facebook-okoli {
     justify-content: space-around;
   }
   .flex-icon__column {
-    margin-bottom: 60px;
+    margin-bottom: 10px;
   }
   @-webkit-keyframes pohyb {
     50% {
