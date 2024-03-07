@@ -3,72 +3,74 @@
 /*Patička*/
 
 .footer {
-    padding: 20px;
+  padding: 20px;
 }
 
 .footer__img {
-    height: 140px;
+  height: 140px;
 }
 
 .footer__icon {
-    height: 50px;
+  height: 50px;
 }
 
 .footer__link {
-    font-size: base.$font-size-third;
-    display: flex;
-    justify-content: end;
+  font-size: base.$font-size-third;
+  display: flex;
+  justify-content: end;
 }
 
 .footer__item {
-    font-weight: 600;
-    margin-bottom: 30px;
+  font-weight: 600;
+  margin-bottom: 30px;
 }
 
 .footer__text {
-    font-size: 14px;
-    margin: 0;
-    margin-top: 30px;
+  font-size: 14px;
+  margin: 0;
+  margin-top: 30px;
+}
+
+.tel__paticka {
+  color: #000000;
+
+  &:hover {
+    text-decoration: none;
+  }
 }
 
 .line {
-    max-width: 100%;
+  max-width: 100%;
 }
 
 a svg:hover #facebook-f {
-    fill: base.$color-primary;
+  fill: base.$color-primary;
 }
 
 a svg:hover #facebook-okoli {
-    fill: white;
-    stroke: base.$color-primary;
-    stroke-width: 2px;
+  fill: white;
+  stroke: base.$color-primary;
+  stroke-width: 2px;
 }
 
-
-
 @media screen and (min-width: 768px) {
-
-    .footer__item {
-        font-size: base.$font-size-secondary;
-    }
-
+  .footer__item {
+    font-size: base.$font-size-secondary;
+  }
 }
 
 @media screen and (min-width: 1440px) {
+  .footer {
+    padding: 80px;
+    max-width: 1680px;
+    margin: 0 auto;
+  }
 
-    .footer {
-        padding: 80px;
-        max-width: 1680px;
-        margin: 0 auto;
-    }
+  .footer__item {
+    font-size: base.$font-size-primary;
+  }
 
-    .footer__item {
-        font-size: base.$font-size-primary;
-    }
-
-    .footer__text {
-        font-size: base.$font-size-third;
-    }
-
+  .footer__text {
+    font-size: base.$font-size-third;
+  }
 }
